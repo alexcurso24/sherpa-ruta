@@ -1,0 +1,90 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero video */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* Header clásico fijo */
+.header-inner {
+  position: fixed; /* Se queda en la pantalla al hacer scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  color: white;
+  background: rgba(0, 0, 0, 0.4); /* Fondo transparente */
+  backdrop-filter: blur(5px); /* Efecto blur */
+}
+
+/* Logo y texto */
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.brand img.logo {
+  width: 120px;
+  margin-right: 10px;
+}
+
+
+/* Menú */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu ul li a {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.nav-menu ul li a:hover,
+.nav-menu ul li a[aria-current="page"] {
+  color: #ffd700;
+}
+
+/* Contenido de la página */
+.content {
+  padding: 100px 20px 40px; /* Deja espacio para header fijo */
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+.hero h1 {
+  font-size: 0px;
+  
+}

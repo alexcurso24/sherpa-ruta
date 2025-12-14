@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia de Viajes · Contacto</title>
+  <meta name="description" content="Formulario de contacto para solicitar información sobre nuestras aventuras y viajes locales.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner" role="banner">
+      <a href="index.html" class="brand" aria-label="Inicio - Agencia de Viajes">
+        <span class="logo" aria-hidden="true">SR</span>
+        <div>
+          <div style="font-family:Montserrat, sans-serif; font-weight:700;">SHERPA RUTA</div>
+        </div>
+      </a>
+
+      <nav aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicio.html">Servicios</a></li>
+          <li><a href="sobre.html">Sobre Nosotros</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" aria-labelledby="contacto-title">
+      <h1 id="contacto-title" class="h-title">Contacto</h1>
+      <p class="h-sub">Escríbenos para solicitar disponibilidad, presupuesto o cualquier consulta. Responderemos a la mayor brevedad.</p>
+
+      <div style="display:flex; gap:1.25rem; flex-wrap:wrap; margin-top:1.25rem;">
+        <div style="flex:1 1 420px;">
+          <form class="form" action="#" method="post" novalidate aria-label="Formulario de contacto">
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" class="input" type="text" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="field">
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" class="input" type="email" placeholder="tucorreo@ejemplo.com" required>
+            </div>
+
+            <div class="field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué te interesa..." required></textarea>
+            </div>
+
+            <div class="rgpd">
+              <input id="rgpd" type="checkbox" class="checkbox" name="rgpd" required>
+              <label for="rgpd" style="font-size:0.95rem;">
+                Acepto la <a href="politica.html">política de privacidad</a> y el tratamiento de mis datos.
+              </label>
+            </div>
+
+            <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap;">
+              <button type="submit" class="btn">Enviar mensaje</button>
+              <div class="note">Nuestro compromiso: tratamiento responsable y limitado de tus datos.</div>
+            </div>
+          </form>
+        </div>
+
+        <aside style="flex:1 1 300px;">
+          <div class="form" style="display:flex; flex-direction:column; gap:0.6rem;">
+            <h3 style="margin:0 0 0.35rem; font-family:Montserrat, sans-serif;">Contacto directo</h3>
+            <div class="small">Teléfono: <a href="tel:+34600000000">+34 6444 94 289</a></div>
+            <div class="small">Email: <a href="mailto:info@aventuralocal.es">info@aventuralocal.es</a></div>
+            <div style="height:8px"></div>
+            <div class="small">Horario atención: Lun - Vie 9:00 - 18:00</div>
+            <div style="height:12px"></div>
+            <figure style="margin:0;">
+              <img src="img/sobre.jpg" alt="Mapa ilustrativo" style="width:100%; border-radius:10px; display:block;">
+              <figcaption class="small" style="margin-top:0.5rem;">Te esperamos aqui..</figcaption>
+            </figure>
+          </div>
+        </aside>
+      </div>
+
+      <section style="margin-top:1.5rem;">
+        <h5 class="note">Este sitio no utiliza cookies propias ni de terceros.</h5>
+      </section>
+    </section>
+  </main>
+
+   <footer>
+    <div class="container footer-inner" role="contentinfo">
+      <div>
+        <div style="font-weight:700; font-family:Montserrat, sans-serif;">© Agencia de Viajes</div>
+        <div class="small">Aventura Local — Todos los derechos reservados</div>
+      </div>
+
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><img src="icon/facebook.png" alt="facebook"></a>
+        <a href="#" aria-label="Instagram"><img src="icon/social.png" alt="instagram"></a>
+        <a href="#" aria-label="tik-tok"><img src="icon/tik-tok.png" alt="tik-tok"></a>
+        <a href="#" aria-label="youtube"><img src="icon/youtube.png" alt="youtube"></a>
+      </div>
+
+      <div class="center">
+        <a href="politica.html" class="small">Política de Privacidad</a>
+        <div class="small" style="margin-top:0.5rem;">Este sitio no utiliza cookies propias ni de terceros.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
